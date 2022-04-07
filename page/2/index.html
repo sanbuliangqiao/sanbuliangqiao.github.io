@@ -3,8 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>三步两桥</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000" />
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <title>Hexo</title>
   <meta property="og:type" content="website">
 <meta property="og:title" content="三步两桥">
 <meta property="og:url" content="http://yoursite.com/page/2/index.html">
@@ -12,462 +25,619 @@
 <meta property="og:locale">
 <meta property="article:author" content="三步">
 <meta name="twitter:card" content="summary">
+  <!-- Canonical links -->
+  <link rel="canonical" href="http://yoursite.com/page/2/index.html">
   
     <link rel="alternate" href="/atom.xml" title="三步两桥" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
   
   
 <link rel="stylesheet" href="/css/style.css">
 
   
-
+  
+  
+  
 <meta name="generator" content="Hexo 6.1.0"></head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">三步两桥</a>
-      </h1>
+
+<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
       
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/cofess" target="_blank">
+          <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">昵称</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Web Developer &amp; Designer</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Shenzhen, China</small>
       </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="Type something..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
     </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav ">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">Home</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">Archives</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">Categories</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">Tags</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">Repository</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-books">
+          <a href="/books">
+            
+            <i class="icon icon-book-fill"></i>
+            
+            <span class="menu-title">Books</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links">
+            
+            <i class="icon icon-friendship"></i>
+            
+            <span class="menu-title">Links</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">About</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/cofess" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="http://weibo.com/cofess" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://twitter.com/iwebued" target="_blank" title="Twitter" data-toggle=tooltip data-placement=top><i class="icon icon-twitter"></i></a></li>
+        
+        <li><a href="https://www.behance.net/cofess" target="_blank" title="Behance" data-toggle=tooltip data-placement=top><i class="icon icon-behance"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    </nav>
   </div>
 </header>
-      <div class="outer">
-        <section id="main">
+
   
-    <article id="post-20220215" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/04/03/20220215/" class="article-date">
-  <time datetime="2022-04-03T01:24:31.000Z" itemprop="datePublished">2022-04-03</time>
-</a>
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>欢迎交流与分享经验!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+
+    
+      
+
+    
+      
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Archive</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a><span class="archive-list-count">16</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2022/04/03/20220403/" class="title">20220403</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-04-03T01:25:35.000Z" itemprop="datePublished">2022-04-03</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2022/04/03/20220331/" class="title">20220331</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-04-03T01:25:28.000Z" itemprop="datePublished">2022-04-03</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2022/04/03/20220330/" class="title">20220330</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-04-03T01:25:22.000Z" itemprop="datePublished">2022-04-03</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2022/04/03/20220326/" class="title">20220326</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-04-03T01:25:16.000Z" itemprop="datePublished">2022-04-03</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2022/04/03/20220324/" class="title">20220324</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-04-03T01:25:09.000Z" itemprop="datePublished">2022-04-03</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
     
   </div>
-  <div class="article-inner">
+</aside>
+
+  
+  <main class="main" role="main">
+  
+  <div class="content article-list">
     
+      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="article-header">
     
-      <header class="article-header">
-        
   
     <h1 itemprop="name">
       <a class="article-title" href="/2022/04/03/20220215/">20220215</a>
     </h1>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>做了个噩梦，梦见一些可怕的事情。但愿自己可以快点成长，改掉粗心不善观察的坏习惯。仪式感对你我，对亲密关系都有很重要很重要的作用，毕竟人都是嘴硬心软的。我是对生活很迟钝的人，我想你某种意义上也是，不爱拍照、不爱凑热闹、不爱趋俗。但如果放下包袱、主动尝试拥抱生活，会很不一样吧。生活中的点点滴滴，这些细小的瞬间不正是感动彼此的重要组成部分么。回想自己真的是挺迟钝的，那天吃完饭你拉着我去抓娃娃、昨天的虎虎生威彩票，我应该主动拉你去试试的。而不是傻傻的等着你考虑好一会儿犹豫良久再鼓起勇气拉我去。经营氛围方面也是，我真的是做的不够好，要多多主动创造一些生活中的惊喜给你呀，你这么可爱又天真，真的很想看到你开心满意的笑容，永远永远被宠溺着。那个秘密谋划了很久，进展还不顺利，要加快进度了！最近事情真的一件接着一件，工作上还有很多课题还没有探索，现在又要开新场景，已经感受到很多高层的压力传递下来了，好好规划一件一件完成吧！妈妈今天体检，快手术了，虽然是微创比较成熟，还是有点担心。想到你这么瘦，好似一阵风就能吹倒，不免也有些担心。特别是被小胖踢到肚子，你那么痛还嘴硬说没事，果然人都是嘴硬心软。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2022/04/03/20220215/" data-id="cl1ouznrd00050qjg6m1f6mp5" class="article-share-link">Share</a>
-      
-      
-    </footer>
   </div>
   
+  <p class="article-meta">
+    <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2022/04/03/20220215/" class="article-date">
+	  <time datetime="2022-04-03T01:24:31.000Z" itemprop="datePublished">Apr 3</time>
+	</a>
+</span>
+    
+    
+
+    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/04/03/20220215/#comments" class="article-comment-link">Comments</a></span>
+    
+  </p>
 </article>
 
-
-  
-    <article id="post-20220214" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/04/03/20220214/" class="article-date">
-  <time datetime="2022-04-03T01:24:25.000Z" itemprop="datePublished">2022-04-03</time>
-</a>
     
-  </div>
-  <div class="article-inner">
+      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="article-header">
     
-    
-      <header class="article-header">
-        
   
     <h1 itemprop="name">
       <a class="article-title" href="/2022/04/03/20220214/">20220214</a>
     </h1>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>情人节晚上糟糕的安排，没有规划，计划也没有完成，让你失望了。最近总是忙来忙去却忽略了最重要的东西，我真是傻，让所爱的人期待落空，自责。</p>
-<p>昨天的鱼汤翻车了，厨艺还真要好好练练，不想再让你失望，发现自己真的很多事情都做的不好，不是一个合格的男朋友。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2022/04/03/20220214/" data-id="cl1ouznrc00040qjgan8h4uat" class="article-share-link">Share</a>
-      
-      
-    </footer>
   </div>
   
+  <p class="article-meta">
+    <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2022/04/03/20220214/" class="article-date">
+	  <time datetime="2022-04-03T01:24:25.000Z" itemprop="datePublished">Apr 3</time>
+	</a>
+</span>
+    
+    
+
+    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/04/03/20220214/#comments" class="article-comment-link">Comments</a></span>
+    
+  </p>
 </article>
 
-
-  
-    <article id="post-20220210" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/04/03/20220210/" class="article-date">
-  <time datetime="2022-04-03T01:24:19.000Z" itemprop="datePublished">2022-04-03</time>
-</a>
     
-  </div>
-  <div class="article-inner">
+      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="article-header">
     
-    
-      <header class="article-header">
-        
   
     <h1 itemprop="name">
       <a class="article-title" href="/2022/04/03/20220210/">20220210</a>
     </h1>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>有很长一段时间没有专注的做一件事了。希望搬进新家后快速把学习区布置好之后，尽快进入状态，有很多很多事情规划了都还没有执行。我执行力一直还挺好的，但那是在一个人的情况下，毕竟单身生活可以随心所以，可以一整天全神贯注的啃书，或者学某个东西。新的生活二人世界如何相处、精力如何分配还真是一门需要好好钻研的学问。近一个多月以来发生了太多事情，感情的进展远超出预想。发现自己身上有非常多的改变和感悟，绝大多数改变是积极的一面，有非常非常多的意外收获和成长。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2022/04/03/20220210/" data-id="cl1ouznrb00030qjg1q9c0etw" class="article-share-link">Share</a>
-      
-      
-    </footer>
   </div>
   
+  <p class="article-meta">
+    <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2022/04/03/20220210/" class="article-date">
+	  <time datetime="2022-04-03T01:24:19.000Z" itemprop="datePublished">Apr 3</time>
+	</a>
+</span>
+    
+    
+
+    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/04/03/20220210/#comments" class="article-comment-link">Comments</a></span>
+    
+  </p>
 </article>
 
-
-  
-    <article id="post-20220207" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/04/03/20220207/" class="article-date">
-  <time datetime="2022-04-03T01:24:09.000Z" itemprop="datePublished">2022-04-03</time>
-</a>
     
-  </div>
-  <div class="article-inner">
+      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="article-header">
     
-    
-      <header class="article-header">
-        
   
     <h1 itemprop="name">
       <a class="article-title" href="/2022/04/03/20220207/">20220207</a>
     </h1>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>很多想法和心情，当时没有记录就忘记了。还是要及时的记录，以后可以照着文字或者图片回忆起当时的心情和感受。以前打印机还好用的时候，喜欢的图片会打印出来留念，可以把我们的交往的时光用照片的形式保存下来，在背面记录当时的心情感受做成照片书，老了以后坐一起翻，应该很温馨吧。</p>
-<p>你的不安全感，希望我的影响是正向而不是负向的。有时候真希望我的家庭能富裕一些，也许可以缓解你一些不安全感，而不是带来担心和困扰。希望自己能更努力一些，给你一个有安全感温馨的家。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2022/04/03/20220207/" data-id="cl1ouznra00020qjgab8me155" class="article-share-link">Share</a>
-      
-      
-    </footer>
   </div>
   
+  <p class="article-meta">
+    <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2022/04/03/20220207/" class="article-date">
+	  <time datetime="2022-04-03T01:24:09.000Z" itemprop="datePublished">Apr 3</time>
+	</a>
+</span>
+    
+    
+
+    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/04/03/20220207/#comments" class="article-comment-link">Comments</a></span>
+    
+  </p>
 </article>
 
-
-  
-    <article id="post-20220206" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/04/03/20220206/" class="article-date">
-  <time datetime="2022-04-03T01:24:04.000Z" itemprop="datePublished">2022-04-03</time>
-</a>
     
-  </div>
-  <div class="article-inner">
+      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="article-header">
     
-    
-      <header class="article-header">
-        
   
     <h1 itemprop="name">
       <a class="article-title" href="/2022/04/03/20220206/">20220206</a>
     </h1>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>鱼汤做的还不错，露宝吃了很多很香，做饭的动力满满！</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2022/04/03/20220206/" data-id="cl1ouznr700010qjg2f75d3n7" class="article-share-link">Share</a>
-      
-      
-    </footer>
   </div>
   
+  <p class="article-meta">
+    <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2022/04/03/20220206/" class="article-date">
+	  <time datetime="2022-04-03T01:24:04.000Z" itemprop="datePublished">Apr 3</time>
+	</a>
+</span>
+    
+    
+
+    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/04/03/20220206/#comments" class="article-comment-link">Comments</a></span>
+    
+  </p>
 </article>
 
-
-  
-    <article id="post-faith" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/04/03/faith/" class="article-date">
-  <time datetime="2022-04-03T01:22:19.000Z" itemprop="datePublished">2022-04-03</time>
-</a>
     
-  </div>
-  <div class="article-inner">
+      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="article-header">
     
-    
-      <header class="article-header">
-        
   
     <h1 itemprop="name">
       <a class="article-title" href="/2022/04/03/faith/">faith</a>
     </h1>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ol>
-<li>我永远迁就着你，一定确定肯定</li>
-<li>永远爱你，给你全部的爱</li>
-<li>刻在心口的字</li>
-<li>给你一个家，做你的依靠，一辈子守护你</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2022/04/03/faith/" data-id="cl1ouznrp000h0qjgdx4xha1g" class="article-share-link">Share</a>
-      
-      
-    </footer>
   </div>
   
+  <p class="article-meta">
+    <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2022/04/03/faith/" class="article-date">
+	  <time datetime="2022-04-03T01:22:19.000Z" itemprop="datePublished">Apr 3</time>
+	</a>
+</span>
+    
+    
+
+    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/04/03/faith/#comments" class="article-comment-link">Comments</a></span>
+    
+  </p>
 </article>
 
-
-  
-    <article id="post-20220313" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/03/13/20220313/" class="article-date">
-  <time datetime="2022-03-13T04:30:25.000Z" itemprop="datePublished">2022-03-13</time>
-</a>
     
-  </div>
-  <div class="article-inner">
+      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="article-header">
     
-    
-      <header class="article-header">
-        
   
     <h1 itemprop="name">
       <a class="article-title" href="/2022/03/13/20220313/">小包子</a>
     </h1>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="/material/images/cute.png" alt="cute"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2022/03/13/20220313/" data-id="cl1ouznri000a0qjg1mhl88ld" class="article-share-link">Share</a>
-      
-      
-    </footer>
   </div>
   
+  <p class="article-meta">
+    <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2022/03/13/20220313/" class="article-date">
+	  <time datetime="2022-03-13T04:30:25.000Z" itemprop="datePublished">Mar 13</time>
+	</a>
+</span>
+    
+    
+
+    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/03/13/20220313/#comments" class="article-comment-link">Comments</a></span>
+    
+  </p>
 </article>
 
-
-  
-    <article id="post-20211227" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/12/27/20211227/" class="article-date">
-  <time datetime="2021-12-26T18:20:44.000Z" itemprop="datePublished">2021-12-27</time>
-</a>
     
-  </div>
-  <div class="article-inner">
+      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="article-header">
     
-    
-      <header class="article-header">
-        
   
     <h1 itemprop="name">
       <a class="article-title" href="/2021/12/27/20211227/">flipped</a>
     </h1>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>我想了想，如果我是女生，有个人聊的来但又一直没主动约见面，确实会让人有点疑惑和火大。</p>
-<p>我以前是一个习惯做规划的人，把想要达成的目标，拆解达成小目标，按计划一步一步去执行。选学校，定方向，打比赛，找实习，找工作，计划三年晋升后离职回杭州，都是提前规划也都实现了预定目标。</p>
-<p>但回杭州后我第一次没有达成目标，入职之后做的方向和面试聊的不一样，再过不久连团队和业务也都拆分变动了，深切体会到了什么是拥抱变化，也是我人生中第一次意识到事情的发展并不总会按照预期规划的去进行。生活中有些时候就是会有一些考虑不到的变量，计划赶不上变化也是时有发生的事。也许以往太习惯这种谋定而后动的方式，所以很多事情就被主观的推后了，比如感情。</p>
-<p>刚好这个时候遇到了你，我第一次遇到这么特别的女生，性格直爽不拐弯抹角，真诚又有趣，也很聊得来。</p>
-<p>我来这边后工作压力比较大，暴饮暴食养成吃宵夜的习惯，身体状况不好体重增加了很多。我在想如果我是女生肯定不喜欢现在这个状态的我，我本来一直对自己还蛮自信的，不过在现在这个时刻，遇到很在意的人，就变得非常的不自信起来。这时候又会想是不是等自己调整好状态再行动？</p>
-<p>不过就如你今晚提点的，等一切都准备好，也许错过就真的错过了。想起饮食男女的台词：人生不能像做菜，等到所有的料准备好了才下锅。谢谢你帮我指出来，我也积极去改正。</p>
-<p>我有个习惯每年会自己定个关键词作为行动准则，做一件事之前会下意识的问问自己是不是符合。20年的关键词是真诚，21年的关键词是认真，刚好马上快元旦了，22年的关键词是希望是open。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2021/12/27/20211227/" data-id="cl1ouznr200000qjgcn7wb9dj" class="article-share-link">Share</a>
-      
-      
-    </footer>
   </div>
   
+  <p class="article-meta">
+    <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2021/12/27/20211227/" class="article-date">
+	  <time datetime="2021-12-26T18:20:44.000Z" itemprop="datePublished">Dec 27</time>
+	</a>
+</span>
+    
+    
+
+    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/12/27/20211227/#comments" class="article-comment-link">Comments</a></span>
+    
+  </p>
 </article>
 
-
-  
-
-
-  <nav id="page-nav">
-    <a class="extend prev" rel="prev" href="/">&amp;laquo; __(&#39;prev&#39;)</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-  </nav>
-</section>
-        
-          <aside id="sidebar">
-  
     
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2022/04/03/20220403/">20220403</a>
-          </li>
-        
-          <li>
-            <a href="/2022/04/03/20220331/">20220331</a>
-          </li>
-        
-          <li>
-            <a href="/2022/04/03/20220330/">20220330</a>
-          </li>
-        
-          <li>
-            <a href="/2022/04/03/20220326/">20220326</a>
-          </li>
-        
-          <li>
-            <a href="/2022/04/03/20220324/">20220324</a>
-          </li>
-        
-      </ul>
-    </div>
   </div>
 
   
-</aside>
+    
+    <nav class="bar bar-footer clearfix" data-stick-bottom>
+        <div class="bar-inner">
+        <ul class="pager pull-left">
+            
+            <li class="prev">
+                <a href="/">
+                    <i class="icon icon-angle-left"></i>
+                    Prev
+                </a>
+            </li>
+            
+            
+            <li class="next disabled">
+                <a href="javascript:;">
+                    Next
+                    <i class="icon icon-angle-right"></i>                    
+                </a>
+            </li>
+            
+        </ul>
+            <div class="total-article bar-right">Page 2 of 2</div>
+        </div>
+    </nav>
+    
+ 
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/cofess" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
         
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2022 三步<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        <li><a href="http://weibo.com/cofess" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://twitter.com/iwebued" target="_blank" title="Twitter" data-toggle=tooltip data-placement=top><i class="icon icon-twitter"></i></a></li>
+        
+        <li><a href="https://www.behance.net/cofess" target="_blank" title="Behance" data-toggle=tooltip data-placement=top><i class="icon icon-behance"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
     </div>
-  </div>
 </footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/plugin.min.js"></script>
 
 
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script src="/js/application.js"></script>
 
 
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
 
 
-<script src="/js/script.js"></script>
 
 
-  </div>
+
+
+   
+
+
+
+
+
+
+
+
+
 </body>
 </html>
